@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+        <h2>Password Generator</h2> 
+        <h3 class="password-display" id="passwordDisplay" name="password-display">Password</h3>
+   <div class="container">
+       <form  id="passwordGeneratorForm" class="form">
+        <div class="character-amount-container">
+         <label for="characterAmountNumber">Character length</label>
+       <input type="number" class="number-input" min="1" max="20" value="10" id="characterAmountNumber">
+        </div>
+       <input type="range" min="1" max="20" value="10" id="characterAmountRange">
+  
+       <div class="checkbox">
+        <input type="checkbox" id="includeUppercase">
+        <label for="includeUppercase">Include Uppercase Letters</label>
+       </div>
+
+
+        <div class="checkbox">
+         <input type="checkbox" id="includeLowercase">
+        <label for="includeLowercase">Include Lowercase Letters</label>
+       </div>
+
+
+        <div class="checkbox">
+          <input type="checkbox" id="includeNumbers">
+          <label for="includeNumbers">Include Numbers</label>  
+        </div>
+        
+
+        <div class="checkbox">
+       <input type="checkbox" id="includeSymbols">
+        <label for="includeSymbols">Include Symbols</label>
+        </div>
+ 
+
+        <div class="strength">
+          <h4>STRENGTH</h4>
+          <div class="strength-checker">
+            <h5 id="strength-text"></h5>
+            <ul class="strength-bar">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+
+    <button type="submit" id="generateBtn">Generate 
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    </form>
+
+
+   </div>
+   <script src="https://kit.fontawesome.com/738c06d4fd.js" crossorigin="anonymous"></script>
+ <script src="script.js"></script>
+</body>
+</html>
